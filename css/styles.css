@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+html,body
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'Righteous', cursive;
+    //background: url("../img/background.jpg") center;
+    background: #294072;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.navbar-default .navbar-nav>li>a
+{
+    color: #fff !important;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.navbar-default {
+	background: rgba(28, 43, 74, 0.9);
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+a.navbar-brand {
+    color: #fff !important;
+    font-size: 35px;
+}
+header >h1
+{
+    color: white;
+    font-size: 5em;
+    margin-top: 2%;
+}
+#myCanvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: 0;
+
+}
+#frm {
+    //padding: 20px;
+    margin-top: 5%;
+    color: #fff;
+    font-family: 'Exo', sans-serif;
+    box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
+}
+#sign1 {
+	background: #17233b;
+}
+#sign2 {
+	padding: 10px;
+    background: #1c2b4a;
+}
+#sign3 {
+    padding: 20px;
+    background:  #17233b;
+}
+.form-control {
+	margin: 10px;
+}
+input.form-control
+{
+    background: #12192c;
+}
+label
+{
+    margin-top: 10px;
+}
