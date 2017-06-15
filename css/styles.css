@@ -33,7 +33,7 @@ body
 }
 a.navbar-brand {
     color: #fff !important;
-    font-size: 35px;
+    font-size: 30px;
 }
 header >h1
 {
@@ -58,7 +58,7 @@ header >h1
 #landing {
 	color: white;
      position: absolute;
-    top:40%;
+    top:30%;
     font-family: 'myFont', sans-serif;
     bottom: 0;
     left: 0;
