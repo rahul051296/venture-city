@@ -4,7 +4,7 @@ window.onload = function() {
     color: '#ffffff',
       speed:1.5,
     connectParticles: false,
-      maxParticles:200
+      maxParticles:100
       
   });
 };

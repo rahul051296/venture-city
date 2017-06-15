@@ -42,8 +42,8 @@
             </div>
         </nav>
     <header class="container-fluid" id="home">
-        <center>
-            <div class="container" id="landing">
+       <center>
+         <div class="container" id="landing">
                 <h1 class="animated fadeInDown">WELCOME TO VENTURE CITY!</h1>
                 <h5 class="animated fadeInDown">The joy of meeting an expert teacher, for the craving learner.</h5>
                 <button id="btn1" class="btn hvr-grow-shadow animated fadeIn delay-1s">Get Started</button>
@@ -104,16 +104,19 @@
                             </form>
                     </div>
                 </div>
-                </div> 
+                </div>
             </center>
+        <center>
+            
+        </center>
     </header>  
     <script>
       function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('ID: ' + profile.getId()); 
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  console.log('Email: ' + profile.getEmail()); 
 }
     </script>
 </body>
