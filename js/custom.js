@@ -1,10 +1,17 @@
 window.onload = function() {
   Particles.init({
     selector: '#myCanvas',
-    color: '#b8ddf8',
+    color: '#ffffff',
       speed:1.5,
-    connectParticles: true,
-      maxParticles:150
+    connectParticles: false,
+      maxParticles:200
       
   });
 };
+
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#landing").hide();
+        $("#signUp").show();
+    })
+});

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Exo');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
+@font-face
+{
+    font-family: myFont;
+    src: url('Pasajero.otf');
+}
 html,body
 {
     margin: 0;
@@ -7,21 +12,21 @@ html,body
 }
 body
 {
-    font-family: 'Righteous', cursive;
-    //background: url("../img/background.jpg") center;
-    background: #294072;
+    font-family: 'myFont', cursive;
+    background: url("../img/background.jpg") center;
+    //background: #294072;
     background-size:cover;
     background-repeat: no-repeat;
 }
 .navbar-default .navbar-nav>li>a
 {
     color: #fff !important;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.63);
     border-radius: 10px;
     padding: 10px;
 }
 .navbar-default {
-	background: rgba(28, 43, 74, 0.9);
+	background: rgba(28, 43, 74, 0);
     border: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -46,32 +51,72 @@ header >h1
     z-index: 0;
 
 }
+#landing h1 {
+    font-size: 4em;
+   
+}
+#landing {
+	color: white;
+     position: absolute;
+    top:40%;
+    font-family: 'myFont', sans-serif;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#btn1 {
+  width: 200px;
+    height: 70px;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+#btn1:hover {
+	
+    background-color: #FFF;
+}
 #frm {
-    //padding: 20px;
     margin-top: 5%;
     color: #fff;
     font-family: 'Exo', sans-serif;
     box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
 }
+#signUp {
+	display: none;
+}
 #sign1 {
-	background: #17233b;
+	background: rgba(23, 35, 59, 0.9);
 }
 #sign2 {
 	padding: 10px;
-    background: #1c2b4a;
+    background: rgba(28, 43, 74, 0.7);
 }
 #sign3 {
-    padding: 20px;
-    background:  #17233b;
+    padding: 10px;
+    background:  rgba(23, 35, 59, 0.9);
 }
 .form-control {
 	margin: 10px;
 }
-input.form-control
+.form-big
 {
-    background: #12192c;
+    height: 30px;
+}
+input.form-control
+{   
+    color: #fff;
+    background: rgba(18, 25, 44, 0.9);
 }
 label
 {
     margin-top: 10px;
+}
+form
+{margin: 0;}
+
+.custom_btn
+{
+  margin-top:  10px;
 }
