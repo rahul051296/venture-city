@@ -7,15 +7,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/particle.js"></script>
-    <script src="js/wow.js"></script>
-    <script>
-            new WOW().init();
-        </script>
-    <script src="js/custom.js"></script>
-    <script src="main.js"></script>
+    
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="4279964016-agnfkanti6dra2if0g6g60g9fmtq1kjl.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -171,6 +163,15 @@
     }
       }
     </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/particle.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+            new WOW().init();
+        </script>
+    <script src="js/custom.js"></script>
+    <script src="main.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh-fLzIpXO7XxWC4EZ_5MyyqCQtn7eYPo&callback=initMap">
     </script>
@@ -182,20 +183,7 @@
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail());
-}
-      $(document).ready(function(){
-              if(gapi.auth2.getAuthInstance().isSignedIn.get()==true)
-                  {
-                        $('#signUp').hide();
-                        $('#mapScreen').css("visibility","visible");
-                        $('body').css('background','#f4f4f4');
-                        $('.navbar-default').css("background","rgba(23, 35, 59, 0.9)");
-                        $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
-                        $('.navbar-default').css("margin-bottom","0");
-                        $('#myCanvas').css('visibility','hidden');   
-                  }
-          });
-      });  
+} 
     </script>
 </body>
 </html>
