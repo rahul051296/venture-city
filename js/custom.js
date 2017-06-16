@@ -46,16 +46,9 @@ $(document).ready(function(){
     })
     
     $('#signout').click(function(){
-        $('#signUp').show(); 
+
         $(this).hide();
-        $('#login').show();
-        $('#mapScreen').css('visibility','hidden');
-        $('.navbar-default').css("background","rgba(23, 35, 59, 0.4)");
-        $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
-        $('.navbar-default').css("margin-bottom","0");
-        $('body').css('background','url(../img/background.jpg) no-repeat center center fixed');
-        $('body').css('background-size','cover');
-        $('#myCanvas').css('visibility','visible');  
+       
     });
 });
 
