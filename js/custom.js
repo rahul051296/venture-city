@@ -23,7 +23,7 @@ $(document).ready(function(){
         $('.navbar-nav').show();
             
     })
-    $('.custom_btn').click(function(){
+    $('.signup').click(function(){
         
         if(nameBox.val().length!=0 && emailBox.val().length!=0 && phoneBox.val().length!=0)
             {
@@ -33,9 +33,7 @@ $(document).ready(function(){
         $('.navbar-default').css("background","rgba(23, 35, 59, 0.9)");
         $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
         $('.navbar-default').css("margin-bottom","0");
-        $('#myCanvas').css('visibility','hidden');
-                
-                
+        $('#myCanvas').css('visibility','hidden');   
             }
     })
 });
