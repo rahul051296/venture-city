@@ -14,7 +14,7 @@
     <script>
             new WOW().init();
         </script>
-   
+    <script src="js/custom.js"></script>
     <script src="main.js"></script>
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="4279964016-agnfkanti6dra2if0g6g60g9fmtq1kjl.apps.googleusercontent.com">
@@ -100,7 +100,7 @@
                                 
                             </div> 
                             <div class="col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0">
-                                <div class="g-signin2 custom_btn google-signin" data-onsuccess="onSignIn" data-theme="dark"></div>
+                                <div id="g-sign" class="g-signin2 custom_btn" data-onsuccess="onSignIn" data-theme="dark"></div>
                                 
                             </div>
                         </div>
@@ -141,15 +141,16 @@
       function initMap() {
           
           var locations = [
-      ['Chetpet', 13.067439,  80.237617, 4],
-      ['Coogee Beach', 13.067439, 80, 5],
-      ['Cronulla Beach', 13, 80.190, 3],
-      ['Manly Beach', 13.1, 80.190, 2],
-      ['Manly Beach', 13.123, 80.10, 2],
-      ['Manly Beach', 13.21, 80.310, 2],
-      ['Manly Beach', 13.13, 80.190, 2],
-      ['Maroubra Beach', 13.2, 80.30, 1]
+      ['Chetpet', 13.067439,  80.237617, 4,'http://icons.veryicon.com/png/System/Red%20Orb%20Alphabet/Letter%20T.png'],
+      ['Coogee Beach', 13.067439, 80, 5,'http://icons.veryicon.com/png/System/Red%20Orb%20Alphabet/Letter%20T.png'],
+      ['Cronulla Beach', 13, 80.190, 3, 'http://icons.veryicon.com/png/System/Red%20Orb%20Alphabet/Letter%20T.png'],
+      ['Manly Beach', 13.1, 80.190, 2,'http://icons.veryicon.com/png/System/Red%20Orb%20Alphabet/Letter%20T.png'],
+        ['Manly Beach', 13.123, 80.10, 2,'img/Letter-L-icon.png'],
+        ['Manly Beach', 13.21, 80.310, 2,'img/Letter-L-icon.png'],
+        ['Manly Beach', 13.13, 80.190, 2,'img/Letter-L-icon.png'],
+        ['Maroubra Beach', 13.2, 80.30, 1,'img/Letter-L-icon.png']
     ];
+          
         var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
       center: new google.maps.LatLng(13.067439,  80.237617),
@@ -159,12 +160,26 @@
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
-
+          var icon1 = {
+    url: "http://icons.veryicon.com/png/System/Red%20Orb%20Alphabet/Letter%20T.png", // url
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
+          var icon2 = {
+    url: "img/Letter-L-icon.png", // url
+    scaledSize: new google.maps.Size(50, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
     for (i = 0; i < locations.length; i++) {  
+    
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
+        map: map,
+        icon: locations[i][4]
       });
+       
 
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
@@ -175,8 +190,6 @@
     }
       }
     </script>
-     <script src="js/jquery-3.2.1.min.js"></script>
-     <script src="js/custom.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh-fLzIpXO7XxWC4EZ_5MyyqCQtn7eYPo&callback=initMap">
     </script>
@@ -189,21 +202,10 @@ function onSignIn(googleUser) {
       console.log('Email: ' + profile.getEmail());
         String name = profile.getName();
         String email = profile.getEmail();
-    
-    $(document).ready(function(){
-         $('#signUp').hide();
-        $('#signout').show();
-        $('#login').hide();
-        $( "div#Username" ).replaceWith( "<h2>"+name+"</h2>" );
-        $( "div#Email" ).replaceWith( "<p>"+email+"</p>" );        
-        $('#mapScreen').css("visibility","visible");
-        $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
-        $('body').css('background','#f4f4f4');
-        $('#myCanvas').css('visibility','hidden');  
-        
-            
-    })
-} 
+}
+        $('#g-sign').click(function(){
+           $('#signUp').hide(); 
+        });
     </script>
 </body>
 </html>

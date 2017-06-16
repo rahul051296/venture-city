@@ -12,6 +12,7 @@ window.onload = function() {
 $(document).ready(function(){
     $('#login').hide();
     $('#signout').hide();
+    $('body').css("overflow","hidden");
     $('.navbar-brand').hide();
     var nameBox= $('#nameBox');
     var emailBox= $('#emailBox');
@@ -31,12 +32,10 @@ $(document).ready(function(){
         $('#signUp').hide();
         $('#signout').show();
         $('#login').hide();
-        if(nameBox.val().length>0 && emailBox.val().length>0)
-            {
+        $('body').css("overflow","scroll");
         $( "div#Username" ).replaceWith( "<h2>"+nameBox.val()+"</h2>" );
         $( "div#Email" ).replaceWith( "<p>"+emailBox.val()+"</p>" );
         $("div#Phone").append("<h5 style='font-weight:bold'>Phone No</h5><p>"+phoneBox.val()+"</p>")        
-            }
         $('#mapScreen').css("visibility","visible");
         $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
         $('body').css('background','#f4f4f4');
@@ -45,10 +44,18 @@ $(document).ready(function(){
             
     })
     
+  /*  $('#g-sign').click(function(){
+        $('#signUp').hide();
+        $('#mapScreen').css("visibility","visible");
+        $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
+        $('body').css('background','#f4f4f4');
+        $('#myCanvas').css('visibility','hidden');  
+    })
+    
     $('#signout').click(function(){
 
         $(this).hide();
        
-    });
+    });*/
 });
 
