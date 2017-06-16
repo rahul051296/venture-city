@@ -32,7 +32,7 @@
       </button>
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="#" class="navbar-brand">Venture City</a>
+                    <a href="#" class="navbar-brand"><span><img src="img/logo.png" width="70px">Venture City</span></a>
                 </div>
                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
@@ -45,6 +45,7 @@
         <div  >
        <center>
          <div class="container" id="landing">
+            
                 <h1 class="animated fadeInDown">WELCOME TO VENTURE CITY!</h1>
                 <h5 id="tagline" class="animated fadeInDown">The joy of meeting an expert teacher, for the craving learner.</h5>
                 <button id="btn1" class="btn hvr-shadow-radial animated fadeIn delay-1s">Get Started</button>
@@ -56,7 +57,7 @@
                <div class="container" id="signUp">
                 <div class="row">
                     <div id="frm" class="col-md-6 col-md-offset-3 animated fadeIn">
-                        <form>
+                        <form name="myform">
                     <div class="row" id="sign1">
                         <h2>SIGN UP WITH US!</h2>
                     </div>
@@ -75,11 +76,11 @@
                             <div class="col-md-10 col-xs-10">
                             <input type="email" id="emailBox" class="form-control" placeholder="Enter your E-mail id" required>
                             </div>
-                            <div class="col-md-2 col-xs-2">
+                          <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="tel" id="phoneBox" class="form-control" placeholder="Enter your Phone Number" required>
+                            <input type="tel" id="phoneBox" class="form-control" placeholder="Enter your Phone Number" required> 
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"></i></label>
@@ -117,10 +118,11 @@
                    <div class="col-md-3">
                     <h2 id="pro">Profile</h2>
                         <div id="profile">
-                         <h4 class="text-muted">Rahul P</h4>
+                            <div id="Username"><h4 class="text-muted">Username</h4></div>
                             <img src="img/avatar.jpg" class="img-circle img-thumbnail" width="150px"/> 
-                            <h5 class="" style="font-weight:bold">E-mail</h5>
-                            <p>rahulprabhakar0596@gmail.com</p>
+                            <h5 style="font-weight:bold">E-mail</h5>
+                       <div id="Email"><p>default@email.com</p></div>
+                            <div id="Phone"></div>
                             <select>
                                 <option>Learner</option>
                                 <option>Teacher</option>
@@ -176,9 +178,8 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh-fLzIpXO7XxWC4EZ_5MyyqCQtn7eYPo&callback=initMap">
     </script>
     <script>
-        var profile;
       function onSignIn(googleUser) {
-  profile = googleUser.getBasicProfile();
+    var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); 
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
