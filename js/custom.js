@@ -14,4 +14,12 @@ $(document).ready(function(){
         $("#landing").hide();
         $("#signUp").show();
     })
+    $('.custom_btn').click(function(){
+        $('#signUp').hide();
+        $('#mapScreen').css("visibility","visible");
+        $('body').css('background','#f1f1f1');
+        $('.navbar-default').css("background","rgba(0, 0, 0, 1)");
+        $('#myCanvas').css('visibility','hidden');
+    })
 });
+

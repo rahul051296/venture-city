@@ -41,14 +41,17 @@
                 </div>
             </div>
         </nav>
-    <header class="container-fluid" id="home">
+    <header id="home">
+        <div  class="container-fluid">
        <center>
          <div class="container" id="landing">
                 <h1 class="animated fadeInDown">WELCOME TO VENTURE CITY!</h1>
-                <h5 class="animated fadeInDown">The joy of meeting an expert teacher, for the craving learner.</h5>
-                <button id="btn1" class="btn hvr-grow-shadow animated fadeIn delay-1s">Get Started</button>
+                <h5 id="tagline" class="animated fadeInDown">The joy of meeting an expert teacher, for the craving learner.</h5>
+                <button id="btn1" class="btn hvr-shadow-radial animated fadeIn delay-1s">Get Started</button>
             </div>
         </center>
+        </div>
+      <div  class="container-fluid">
             <center>
                <div class="container" id="signUp">
                 <div class="row">
@@ -79,13 +82,13 @@
                             <input type="tel" class="form-control" placeholder="Enter your Phone Number" required>
                             </div>
                             <div class="col-md-2 col-xs-2">
-                                <label class="text-center"><i class="fa fa-2x fa-book" aria-hidden="true"></i></label>
+                                <label class="text-center"><i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
                             <input type="text" class="form-control form-big" placeholder="Tell us what you can teach">
                             </div>
                             <div class="col-md-2 col-xs-2">
-                                <label class="text-center"><i class="fa fa-2x fa-leanpub" aria-hidden="true"></i></label>
+                                <label class="text-center"><i class="fa fa-book fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
                             <input type="text" class="form-control form-big" placeholder="Tell us what you want to learn">
@@ -93,7 +96,7 @@
                             </div>
                             <div class="row" id="sign3">
                              <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3">
-                                 <input type="submit" value="Sign Up" name="submit" class="btn btn-block btn-success custom_btn hvr-glow">
+                                 <input type="submit" value="Sign Up" name="submit" class="btn btn-block btn-primary custom_btn hvr-glow">
                                 
                             </div> 
                             <div class="col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0">
@@ -106,10 +109,63 @@
                 </div>
                 </div>
             </center>
+        </div>
         <center>
+            <div id="mapScreen">
+                <h1 class="text-center">Welcome To Venture City!</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="profile">
+                            <h2>Profile</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="map"></div>
+                    </div>
+                
+                </div>
             
+            </div>
         </center>
     </header>  
+    <script>
+      function initMap() {
+          
+          var locations = [
+      ['Chetpet', 13.067439,  80.237617, 4],
+      ['Coogee Beach', 13.067439, 80, 5],
+      ['Cronulla Beach', 13, 80.190, 3],
+      ['Manly Beach', 13.1, 80.190, 2],
+      ['Maroubra Beach', 13.2, 80.30, 1]
+    ];
+        var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(13.067439,  80.237617),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh-fLzIpXO7XxWC4EZ_5MyyqCQtn7eYPo&callback=initMap">
+    </script>
     <script>
       function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();

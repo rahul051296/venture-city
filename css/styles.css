@@ -16,6 +16,7 @@ body
     background: url("../img/background.jpg") center;
     //background: #294072;
     background-size:cover;
+    overflow: hidden;
     background-repeat: no-repeat;
 }
 .navbar-default .navbar-nav>li>a
@@ -26,6 +27,7 @@ body
     padding: 10px;
 }
 .navbar-default {
+    border-radius: 0px;
 	background: rgba(28, 43, 74, 0);
     border: 0;
     padding-top: 10px;
@@ -51,8 +53,20 @@ header >h1
     z-index: 0;
 
 }
+ #map {
+        height: 50%;
+        width: 100%;
+        
+       }
+#mapScreen
+{
+    visibility: hidden;
+}
+#profile {
+	background: #F3f3f3;
+}
 #landing h1 {
-    font-size: 4em;
+    font-size: 5em;
    
 }
 #landing {
@@ -65,17 +79,23 @@ header >h1
     right: 0;
     margin: auto;
 }
+#tagline {
+	margin-top: 2%;
+    font-size: 1.5em;
+}
 #btn1 {
   width: 200px;
     height: 70px;
     border: 1px solid #fff;
     background: rgba(0, 0, 0, 0);
-    margin-top: 10px;
+    margin-top: 3%;
     font-size: 1.5em;
 }
 #btn1:hover {
 	
-    background-color: #FFF;
+    background-color: rgba(22, 186, 235, 0.59);
+    border: rgba(22, 186, 235, 0.59);
+    color: white;
 }
 #frm {
     margin-top: 5%;
