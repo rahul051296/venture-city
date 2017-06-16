@@ -53,7 +53,8 @@ $(document).ready(function(){
         $('.navbar-default').css("background","rgba(23, 35, 59, 0.4)");
         $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
         $('.navbar-default').css("margin-bottom","0");
-        $('body').css('background','url("../img/background.jpg") center');
+        $('body').css('background','url(../img/background.jpg) no-repeat center center fixed');
+        $('body').css('background-size','cover');
         $('#myCanvas').css('visibility','visible');  
     });
 });
