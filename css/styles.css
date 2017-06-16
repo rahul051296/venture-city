@@ -5,6 +5,11 @@
     font-family: myFont;
     src: url('Pasajero.otf');
 }
+@font-face
+{
+    font-family: mySecondFont;
+    src: url('Chosence.Bold.otf');
+}
 html,body
 {
     margin: 0;
@@ -34,7 +39,8 @@ body
 }
 a.navbar-brand {
     color: #fff !important;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Righteous', sans-serif;
     margin-top: -30px;
     margin-left: -20px;
 }
