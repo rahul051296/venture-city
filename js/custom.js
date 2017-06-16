@@ -30,6 +30,7 @@ $(document).ready(function(){
             {
         $( "div#Username" ).replaceWith( "<h2>"+nameBox.val()+"</h2>" );
         $( "div#Email" ).replaceWith( "<p>"+emailBox.val()+"</p>" );
+        $("div#Phone").append("<h5 style='font-weight:bold'>Phone No</h5><p>"+phoneBox.val()+"</p>")        
             }
         $('#mapScreen').css("visibility","visible");
         $('body').css('background','#f4f4f4');

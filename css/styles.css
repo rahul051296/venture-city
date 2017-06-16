@@ -66,6 +66,8 @@ header > h1
 }
 #profile {
 	background: #F3f3f3;
+    font-family: 'Exo','sans-serif';
+
 }
 #landing h1 {
     font-size: 5em;
