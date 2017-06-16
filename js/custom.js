@@ -20,12 +20,11 @@ $(document).ready(function(){
         $("#landing").hide();
         $("#signUp").show();
         $('.navbar-header').show();
-        $('.navbar-nav').show();
-            
+        $('.navbar-nav').show();    
     })
     $('.signup').click(function(){
         
-        if(nameBox.val().length!=0 && emailBox.val().length!=0 && phoneBox.val().length!=0)
+        if(nameBox.val().length >0)
             {
         $('#signUp').hide();
         $('#mapScreen').css("visibility","visible");
