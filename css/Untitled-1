@@ -16,6 +16,8 @@ body
     background: url("../img/background.jpg") center;
     //background: #294072;
     background-size:cover;
+    width: 100%;
+    overflow-x: hidden;
     background-repeat: no-repeat;
 }
 .navbar-default .navbar-nav>li>a
@@ -35,11 +37,12 @@ body
 a.navbar-brand {
     color: #fff !important;
     font-size: 30px;
+    font-family: 'myFont', cursive;
 }
-header > h1
+header >h1
 {
     color: white;
-    font-size: 5em;
+    font-size: 4.5em;
     margin-top: 2%;
 }
 #myCanvas {
@@ -53,8 +56,9 @@ header > h1
 
 }
  #map {
-        height: 80%;
+        height: 85%;
         width: 100%;
+        //border: 3px solid #000;
         box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
 
        }
@@ -63,7 +67,32 @@ header > h1
     visibility: hidden;
 }
 #profile {
-	background: #F3f3f3;
+   
+	background: #fbfbfb;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    font-family: 'Exo','sans-serif';
+    padding: 10px;
+    box-shadow: -1px 1px 0px 0.1px rgba(0,0,0,0.35);
+}
+#profile h4 {
+	font-size: 2em;
+}
+#pro {
+     
+    background: rgba(23, 35, 59, 0.9);
+    //background: #64B5F6;
+    margin-bottom: 0;
+    padding: 20px;
+    color: white;
+    font-size: 2.5em;
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+    border-top: 3px solid #000;
+    box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
+
 }
 #landing h1 {
     font-size: 5em;
@@ -88,7 +117,7 @@ header > h1
     height: 70px;
     border: 1px solid #fff;
     background: rgba(0, 0, 0, 0);
-    margin-top: 3.5%;
+    margin-top: 3%;
     font-size: 1.5em;
 }
 #btn1:hover {
@@ -105,6 +134,7 @@ header > h1
 }
 #signUp {
 	display: none;
+    overflow: hidden;
 }
 #sign1 {
 	background: rgba(23, 35, 59, 0.9);
@@ -142,16 +172,9 @@ form
 }
 
 @media only screen and (max-width:512px)
-{
-    #landing h1 {
-    font-size: 3em;
-   
-    }
-    #tagline {
-	margin-top: 2%;
-    font-size: 1.2em;
-    }
-    #landing {
-	overflow: hidden;
+{   
+   h1
+    {
+        font-size: 20px;
     }
 }

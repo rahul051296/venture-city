@@ -41,8 +41,8 @@
                 </div>
             </div>
         </nav>
-    <header id="home">
-        <div  class="container-fluid">
+    <header id="home" class="container-fluid">
+        <div  >
        <center>
          <div class="container" id="landing">
                 <h1 class="animated fadeInDown">WELCOME TO VENTURE CITY!</h1>
@@ -51,7 +51,7 @@
             </div>
         </center>
         </div>
-      <div  class="container-fluid">
+      <div>
             <center>
                <div class="container" id="signUp">
                 <div class="row">
@@ -67,19 +67,19 @@
 </label>
                             </div>
                             <div class="col-md-10 col-xs-10 ">
-                            <input type="text" class="form-control" placeholder="Enter your name" required>
+                            <input type="text" id="nameBox" class="form-control" placeholder="Enter your name" required>
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="email" class="form-control" placeholder="Enter your E-mail id" required>
+                            <input type="email" id="emailBox" class="form-control" placeholder="Enter your E-mail id" required>
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="tel" class="form-control" placeholder="Enter your Phone Number" required>
+                            <input type="tel" id="phoneBox" class="form-control" placeholder="Enter your Phone Number" required>
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"></i></label>
@@ -112,14 +112,22 @@
         </div>
         <center>
             <div id="mapScreen">
-                <h1 class="text-center">Welcome To Venture City!</h1>
+                <h1 class="text-center"></h1>
                 <div class="row">
-                    <div class="col-md-4">
+                   <div class="col-md-3">
+                    <h2 id="pro">Profile</h2>
                         <div id="profile">
-                            <h2>Profile</h2>
+                         <h4 class="text-muted">Rahul P</h4>
+                            <img src="img/avatar.jpg" class="img-circle img-thumbnail" width="150px"/> 
+                            <h5 class="" style="font-weight:bold">E-mail</h5>
+                            <p>rahulprabhakar0596@gmail.com</p>
+                            <select>
+                                <option>Learner</option>
+                                <option>Teacher</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="col-md-8">
+                    </div> 
+                    <div class="col-md-9">
                         <div id="map"></div>
                     </div>
                 
