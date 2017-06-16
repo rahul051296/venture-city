@@ -184,8 +184,7 @@
   console.log('Email: ' + profile.getEmail());
 }
       $(document).ready(function(){
-          $('.google-signin').click(function(){
-              if(profile.getName().val().length!=0)
+              if(gapi.auth2.getAuthInstance().isSignedIn.get()==true)
                   {
                         $('#signUp').hide();
                         $('#mapScreen').css("visibility","visible");
