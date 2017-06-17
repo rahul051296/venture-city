@@ -21,15 +21,15 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-    
-    
+
+
     <canvas id="myCanvas" style=""></canvas>
     <nav class="navbar navbar-default navbar-fixed">
              <button type="button" id="navbarToggle" class="glyph-pad navbar-toggle collapsed btn-lg" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            
+
                 <span class="fa fa-bars" aria-hidden="true" style="color:white"></span>
 
-                </button> 
+                </button>
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a href="#" class="navbar-brand"><span><img src="img/logo.png" width="70px">VENTURE CITY</span></a>
@@ -61,49 +61,49 @@
                         <h2>SIGN UP WITH US!</h2>
                     </div>
                     <div class="row" id="sign2">
-                        
+
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-user fa-2x" aria-hidden="true"></i>
 </label>
                             </div>
                             <div class="col-md-10 col-xs-10 ">
-                            <input type="text" id="nameBox" class="form-control" placeholder="Enter your name" required autocomplete="on">
+                            <input type="text" id="nameBox" class="form-control" placeholder="Enter your name (required field)" required autocomplete="on">
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="email" id="emailBox" class="form-control" placeholder="Enter your E-mail id" required autocomplete="on">
+                            <input type="email" id="emailBox" class="form-control" placeholder="Enter your E-mail id (required field)" required autocomplete="on">
                             </div>
                           <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="tel" id="phoneBox" class="form-control" placeholder="Enter your Phone Number" required autocomplete="on"> 
+                            <input type="tel" id="phoneBox" class="form-control" placeholder="Enter your Phone Number (required field)" required autocomplete="on">
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-2x fa-pencil-square-o" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="text" id="teachBox" class="form-control form-big" placeholder="Tell us what you can teach">
+                            <input type="text" id="teachBox" class="form-control form-big" placeholder="Tell us what you can teach (optional field)">
                             </div>
                             <div class="col-md-2 col-xs-2">
                                 <label class="text-center"><i class="fa fa-book fa-2x" aria-hidden="true"></i></label>
                             </div>
                             <div class="col-md-10 col-xs-10">
-                            <input type="text" id="learnBox" class="form-control form-big" placeholder="Tell us what you want to learn">
+                            <input type="text" id="learnBox" class="form-control form-big" placeholder="Tell us what you want to learn (optional field)">
                             </div>
                             </div>
                             <div class="row" id="sign3">
                              <div class="col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3">
                                  <input type="submit" value="Sign Up" name="submit" class="btn btn-block btn-primary custom_btn signup hvr-glow">
-                            </div> 
+                            </div>
                             <div class="col-md-3 col-md-offset-0 col-sm-3 col-sm-offset-0">
                                 <div id="g-sign" class="g-signin2 custom_btn" data-onsuccess="onSignIn" data-theme="dark"></div>
-                                
+
                             </div>
                         </div>
-                            
+
                     </div>
                 </div>
                 </div>
@@ -114,33 +114,33 @@
                 <div class="row">
                    <div class="col-md-3 col-sm-4">
                         <div id="profile">
-                            <img src="img/avatar.jpg" class="img-responsive" style="width:100%"/> 
-                             <div id="Username"><h3 class="text-muted">John Doe</h3></div>
-                       <div id="Email" class="text-muted"><p>default@email.com</p></div>
-                            <div id="Phone" class="text-muted">9876543210</div>
-                            <div id="who" class="text-muted"><p>Position: Teacher</p></div>
+                            <img src="img/avatar.jpg" class="img-responsive" style="width:100%"/>
+                             <div id="Username"><h3>John Doe</h3></div>
+                       <div id="Email"><p>default@email.com</p></div>
+                            <div id="Phone">9876543210</div>
+                            <div id="who"><p>Position: Teacher</p></div>
                         </div>
                        <div class="teacherClass">
-                           <h4 class="text-muted">Select an User</h4>
-                       <select id="mySelect" name="selector"> 
-                            <option value="1">Ram</option>   
-                            <option value="2">Rahul</option>   
-                            <option value="3">Michael</option>   
-                            <option value="4">Rohit</option>   
-                            <option value="5">Hitesh</option>   
-                            <option value="6">Priya</option>   
-                            <option value="7">Anand</option>   
-                            <option value="8">Sowmya</option>   
-                        </select>
-                           <button type="button" id="choose">Proceed</button>
+                       <select id="mySelect" class="styled-select form-control" name="selector">
+                            <option disabled selected value="0">Select an User</option>
+                            <option value="1">Samuel Benjamin</option>
+                            <option value="2">Gary Lewis</option>
+                            <option value="3">Christopher Michael</option>
+                            <option value="4">Anthony Padilla</option>
+                            <option value="5">Bruce Wayne</option>
+                            <option value="6">Selina Kyle</option>
+                            <option value="7">Barry Allen</option>
+                            <option value="8">Thea Queen</option>
+                        </select><br>
+                           <button type="button" class="btn btn-primary btn-block" id="choose">Proceed</button>
                        </div>
-                    </div> 
+                    </div>
                     <div class="col-md-9 col-sm-8">
                         <div id="map"></div>
                     </div>
-                
+
                 </div>
-            
+
             </div>
         </center>
 
@@ -149,37 +149,40 @@
                    <div class="col-md-4 col-sm-4">
                         <div id="profile2" class="text-center">
                             <div id="upProfile"></div>
-                             <div id="upName"></div>
-                            <div id="upEmail" class="text-muted"></div>
-                            <div id="upPhone" class="text-muted"></div>
-                            <div id="upWho" style="padding-bottom:10px" class="text-muted"></div>
+                            <div id="upName"></div>
+                             <div id="upContent">
+                            <div id="upEmail" ></div>
+                            <div id="upPhone"></div>
+                            <div id="upWho" style="padding-bottom:10px"></div>
+                            </div>
                              <div id="Contact"></div>
 
                        </div>
             </div>
                    <div class="col-md-8 col-sm-8">
                        <h2 class="text-primary text-center">About</h2><hr>
-                    <div id="Bio" class="text-center text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                       <h2 class="text-primary text-center">Please Fill in the Details</h2><hr>
-                       <input type="text" id="calc" class="form-control" placeholder="Enter the number of classes">
+                    <div id="Bio" class="text-center text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+                       
+                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                       
                        </div>
                 </div>
             </div>
-    </header>  
+    </header>
     <script>
       function initMap() {
-          
+
           var locations = [
-        ['Chetpet', 13.067439,  80.237617, 4,'img/Letter-T.png','Ram'],
-        ['Coogee Beach', 13.067439, 80, 5,'img/Letter-T.png','Rahul'],
-        ['Cronulla Beach', 13, 80.190, 3, 'img/Letter-T.png','Michael'],
-        ['Manly Beach', 13.1, 80.190, 2,'img/Letter-T.png','Rohit'],
-        ['Manly Beach', 13.123, 80.10, 2,'img/Letter-L-icon.png','Hitesh'],
-        ['Manly Beach', 13.21, 80.310, 2,'img/Letter-L-icon.png','Priya'],
-        ['Manly Beach', 13.13, 80.190, 2,'img/Letter-L-icon.png','Anand'],
-        ['Maroubra Beach', 13.2, 80.30, 1,'img/Letter-L-icon.png','Sowmya']
+        ['Chetpet', 13.067439,  80.237617, 4,'img/Letter-T.png','Samuel Benjamin'],
+        ['Coogee Beach', 13.067439, 80, 5,'img/Letter-T.png','Gary Lewis'],
+        ['Cronulla Beach', 13, 80.190, 3, 'img/Letter-T.png','Christopher Michael'],
+        ['Manly Beach', 13.1, 80.190, 2,'img/Letter-T.png','Anthony Padilla'],
+        ['Manly Beach', 13.123, 80.10, 2,'img/Letter-L-icon.png','Bruce Wayne'],
+        ['Manly Beach', 13.21, 80.310, 2,'img/Letter-L-icon.png','Selina Kyle'],
+        ['Manly Beach', 13.13, 80.190, 2,'img/Letter-L-icon.png','Barry Allen'],
+        ['Maroubra Beach', 13.2, 80.30, 1,'img/Letter-L-icon.png','Thea Queen']
     ];
-          
+
         var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
       center: new google.maps.LatLng(13.067439,  80.237617),
@@ -189,15 +192,15 @@
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
-    for (i = 0; i < locations.length; i++) {  
-    
+    for (i = 0; i < locations.length; i++) {
+
       marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
         title: "Click for more details",
         icon: locations[i][4]
       });
-       
+
       google.maps.event.addListener(marker, 'click', (function(marker, i) {
         return function() {
         var content = '<p><b>'+locations[i][5]+'</b></p><p>'+locations[i][0]+'</p>';
@@ -207,7 +210,7 @@
       })(marker, i));
     }
       }
-   
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh-fLzIpXO7XxWC4EZ_5MyyqCQtn7eYPo&callback=initMap">
@@ -215,7 +218,7 @@
     <script>
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
-      console.log('ID: ' + profile.getId()); 
+      console.log('ID: ' + profile.getId());
       console.log('Name: ' + profile.getName());
       console.log('Image URL: ' + profile.getImageUrl());
       console.log('Email: ' + profile.getEmail());
@@ -223,7 +226,7 @@ function onSignIn(googleUser) {
         String email = profile.getEmail();
 }
         $('#g-sign').click(function(){
-           $('#signUp').hide(); 
+           $('#signUp').hide();
         });
     </script>
 </body>

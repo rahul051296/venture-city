@@ -23,7 +23,6 @@ $(document).ready(function(){
     $("#btn1").click(function(){
         $("#landing").hide();
         $("#signUp").show();
-        
         $('#login').show();    
         $('.navbar-brand').show();        
     })
@@ -35,106 +34,98 @@ $(document).ready(function(){
         $('#login').hide();
         $('body').css("overflow","scroll");
         $( "div#Username" ).replaceWith( "<h3 class='text-uppercase'>"+nameBox.val()+"</h3>" );
-        $( "div#Email" ).replaceWith( "<p class='text-muted'>Email: "+emailBox.val()+"</p>" );
-        $("div#Phone").replaceWith("<p class='text-muted'>Phone No:"+phoneBox.val()+"</p>");
+        $( "div#Email" ).replaceWith( "<p>Email: "+emailBox.val()+"</p>" );
+        $("div#Phone").replaceWith("<p>Phone No:"+phoneBox.val()+"</p>");
                 if(learnBox.val().length>0)
                     {
-                    $("div#who").replaceWith("<p class='text-muted'>Position: Learner</p>");   
+                    $("div#who").replaceWith("<p style='padding-bottom:10px'>Position: Learner</p>");   
                     }
         $('#mapScreen').css("visibility","visible");
         $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
         $('body').css('background','#f4f4f4');
         $('#myCanvas').css('visibility','hidden');  
             }
+        else{
+            alert("Please Fill in the required details");
+        }
             
     })
-    
     $('#choose').click(function()
                       {
         var name,email,place,positon,pnumber,path;
+        var variable = $('select[name=selector]').val();
         $('#mapScreen').hide();
         $('#userProfile').show();
-        var variable = $('select[name=selector]').val();
         switch(variable)
                 {
-            case '1': name = "Ram";
-                    email = "ram@gmail.com";
+            case '1': name = "Samuel Benjamin";
+                    email = "sambenji@gmail.com";
                     place = "Egmore";
                     pnumber = "9876543210";
                     position="Teacher";
                     path = "img/pro1.jpg"
                     break;
-            case '2': name = "Rahul";
-                    email = "rahul@gmail.com";
+            case '2': name = "Gary Lewis";
+                    email = "garylewis@gmail.com";
                     place = "Korattur";
                     position="Teacher";
                     pnumber = "9876543211";
                     path = "img/pro2.jpg"
                     break;
-            case '3': name = "Michael";
-                    email = "michael@gmail.com";
+            case '3': name = "Christopher Michael";
+                    email = "chrismichael@gmail.com";
                     place = "Ramapuram";
                     position="Teacher";
                     pnumber = "9876543212";
                     path = "img/pro3.jpg";
                     break;
-            case '4': name = "Rohit";
-                    email = "rohit@gmail.com";
+            case '4': name = "Anthony Padilla";
+                    email = "anthony@gmail.com";
                     place = "Vilivakkam";
                     position="Teacher";
                     pnumber = "9876543213";
                     path = "img/pro4.jpg";
                     break;
-            case '5': name = "Hitesh";
-                    email = "hitesh@gmail.com";
+            case '5': name = "Bruce Wayne";
+                    email = "brucewayne@gmail.com";
                     place = "Avadi";
                     position = "Learner";
                     pnumber = "9876543214";
                     path = "img/pro5.jpg";
                     break;
-            case '6': name = "Priya";
-                    email = "priya@gmail.com";
+            case '6': name = "Selina Kyle";
+                    email = "selinakyle@gmail.com";
                     place = "Ennore";
                     position = "Learner";
                     pnumber = "9876543215";
                     path = "img/pro6.jpg";
                     break;
-            case '7': name = "Anand";
-                    email = "anand@gmail.com";
+            case '7': name = "Barry Allen";
+                    email = "barryallen@gmail.com";
                     place = "Kolathur";
                     position = "Learner";
                     pnumber = "9876543216";
                     path = "img/pro7.jpg";
                     break;
-            case '8': name = "Sowmya";
-                    email = "sowmya@gmail.com";
+            case '8': name = "Thea Queen";
+                    email = "theaqueen@gmail.com";
                     place = "Ennore";
                     position = "Learner";
                     pnumber = "9876543217";
                     path = "img/pro8.jpg";
                     break;
         }
-       $('#upName').append("<h2 class='text-center'>"+name+"</h2>");
+       $('#upName').append("<h2 class='text-center'>"+name+"</h2><p>("+place+")</p>");
         $('#Contact').append("<center><div class='row'><div class='col-md-12 icons'><a href='whatsapp://send?text=Hey!' data-action='share/whatsapp/share'><i class='fa fa-whatsapp fa-2x' aria-hidden='true'></i></a></div></center>")
       $('#upEmail').append("<h5>Email: " +email+"</h5>");
        $('#upPhone').append("<h5>Phone No:" +pnumber+"</h5>");
        $('#upWho').append("<h5>Position: " +position+"</h5>");
-        $('#upProfile').append("<img src="+path+" class='img-responsive' style='width:100%'/>");
+        $('#upProfile').append("<img src="+path+" class='img-responsive' style='width:100%; height:300px; object-fit: cover;'/>");
         
     });
     
-  /*  $('#g-sign').click(function(){
-        $('#signUp').hide();
-        $('#mapScreen').css("visibility","visible");
-        $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
-        $('body').css('background','#f4f4f4');
-        $('#myCanvas').css('visibility','hidden');  
+   $('#g-sign').click(function(){
+        alert("This functionality is not available right now. Sorry for the inconvinience :-/. Please try the normal Sign-up");
     })
-    
-    $('#signout').click(function(){
-
-        $(this).hide();
-       
-    });*/
 });
 

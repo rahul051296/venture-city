@@ -84,8 +84,17 @@ header > h1
 #who {
 	padding-bottom: 15px;
 }
+#profile {
+	background: rgba(28, 43, 74, 1);
+    color: white;
+}
 #profile h3 {
     font-weight: bold;
+ color: white;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background:  rgba(23, 35, 59, 1);
 }
 #landing h1 {
     font-size: 5em;
@@ -125,10 +134,18 @@ header > h1
     font-family: 'Exo', sans-serif;
     box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
 }
+select
+{
+    height: 20px;
+}
 #userProfile {
 	display: none;
     margin-top: 10px;
     font-family: 'Righteous', sans-serif;
+}
+#profile2 {
+	background: rgba(28, 43, 74, 1);
+    color: white;
 }
 #signUp {
 	display: none;
@@ -185,6 +202,17 @@ form
 .icons a
 {
     color: white;
+}
+#mapScreen {
+	font-family: 'Righteous',sans-serif;
+}
+.styled-select {
+	margin-left: 0px;
+    font-family: 'Righteous',sans-serif;
+}
+
+#choose {
+	margin-top: -15px;
 }
 @media only screen and (max-width:512px)
 {
