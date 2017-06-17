@@ -76,7 +76,7 @@ header > h1
         height: 80%;
         width: 100%;
         box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
-
+        margin-bottom: 10px;
        }
 #mapScreen
 {
@@ -221,6 +221,7 @@ form
 
 #choose {
 	margin-top: -15px;
+    margin-bottom: 15px;
 }
 @media only screen and (max-width:512px)
 {
