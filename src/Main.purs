@@ -11,11 +11,11 @@ import Prelude
 
 main :: forall eff. Eff (dom :: DOM | eff) Unit
 main = do
-    element <- unsafeDocument globalWindow >>= unsafeQuerySelector "#inputName"
-    unsafeAddEventListener "input" updateBadge element
+    element <- unsafeDocument globalWindow >>= unsafeQuerySelector "#learnerBox"
+    unsafeAddEventListener "input" suggestions element
 
 updateBadge :: forall eff. DOMEvent -> Eff (dom :: DOM | eff) Unit
 updateBadge event = do
-    badge <- unsafeDocument globalWindow >>= unsafeQuerySelector "#badgeName"
+    badge <- unsafeDocument globalWindow >>= unsafeQuerySelector "#suggestions"
     input <- unsafeEventTarget event >>= unsafeValue
     unsafeSetTextContent input badge

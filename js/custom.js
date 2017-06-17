@@ -9,6 +9,8 @@ window.onload = function() {
   });
 };
 
+
+
 $(document).ready(function(){
     $('#signout').hide();
     $('body').css("overflow","hidden");
@@ -127,5 +129,33 @@ $(document).ready(function(){
    $('#g-sign').click(function(){
         alert("This functionality is not available right now. Sorry for the inconvinience :-/. Please try the normal Sign-up");
     })
+    
+   var availableTags = [ "ActionScript", "AppleScript", "Asp"];
+   $(function() { 
+        var availableTags = [ "ActionScript",
+            "AppleScript",
+            "Asp",
+            "BASIC",
+            "C",
+            "C++",
+            "Clojure",
+            "COBOL",
+            "ColdFusion",
+            "Erlang",
+            "Fortran",
+            "Groovy",
+            "Haskell",
+            "Java",
+            "JavaScript",
+            "Lisp",
+            "Perl",
+            "PHP",
+            "Python",
+            "Ruby",
+            "Scala",
+            "Scheme"];
+        $( "#teachBox" ).autocomplete({ source: availableTags, appendTo: "#suggestions1" });
+        $( "#learnBox" ).autocomplete({ source: availableTags, appendTo: "#suggestions2" });
+    });
 });
 

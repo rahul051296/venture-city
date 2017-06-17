@@ -27,6 +27,14 @@ body
   background-size: cover;
     
 }
+#suggestions
+{
+  display: block; 
+    position:relative
+} 
+.ui-autocomplete {
+    position: absolute;
+}
 .navbar-default .navbar-nav>li>a
 {
     color: #fff !important;
