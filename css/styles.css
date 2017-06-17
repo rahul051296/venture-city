@@ -72,9 +72,10 @@ header > h1
        }
 #mapScreen
 {
+    margin-top:10px; 
     visibility: hidden;
 }
-#profile {
+#profile, #profile2{
 	background: #FFFFFF;
     font-family: 'Righteous','sans-serif';
     box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
@@ -83,7 +84,7 @@ header > h1
 #who {
 	padding-bottom: 15px;
 }
-#profile h2 {
+#profile h3 {
     font-weight: bold;
 }
 #landing h1 {
@@ -123,6 +124,11 @@ header > h1
     color: #fff;
     font-family: 'Exo', sans-serif;
     box-shadow: -1px 1px 10px 0.1px rgba(0,0,0,0.35);
+}
+#userProfile {
+	display: none;
+    margin-top: 10px;
+    font-family: 'Righteous', sans-serif;
 }
 #signUp {
 	display: none;

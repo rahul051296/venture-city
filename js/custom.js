@@ -34,7 +34,7 @@ $(document).ready(function(){
         $('#signout').show();
         $('#login').hide();
         $('body').css("overflow","scroll");
-        $( "div#Username" ).replaceWith( "<h2 class='text-uppercase'>"+nameBox.val()+"</h2>" );
+        $( "div#Username" ).replaceWith( "<h3 class='text-uppercase'>"+nameBox.val()+"</h3>" );
         $( "div#Email" ).replaceWith( "<p class='text-muted'>Email: "+emailBox.val()+"</p>" );
         $("div#Phone").replaceWith("<p class='text-muted'>Phone No:"+phoneBox.val()+"</p>");
                 if(learnBox.val().length>0)
@@ -48,6 +48,45 @@ $(document).ready(function(){
             }
             
     })
+    
+    $('#choose').click(function()
+                      {
+        var name,email,place,pnumber,path;
+        $('#mapScreen').hide();
+        $('#userProfile').show();
+        var variable = $('select[name=selector]').val();
+        switch(variable)
+                {
+            case '1': name = "Ram";
+                    email = "ram@gmail.com";
+                    place = "Egmore";
+                    pnumber = "9876543210";
+                    path = "img/pro1.jpg"
+                    break;
+            case '2': name = "Rahul";
+                    email = "rahul@gmail.com";
+                    place = "Korattur";
+                    pnumber = "9876543211";
+                    path = "img/pro2.jpg"
+                    break;
+            case '3': name = "Michael";
+                    email = "michael@gmail.com";
+                    place = "Ramapuram";
+                    pnumber = "9876543212";
+                    path = "img/pro3.jpg";
+                    break;
+            case '4': name = "Rohit";
+                    email = "rohit@gmail.com";
+                    place = "Vilivakkam";
+                    pnumber = "9876543213";
+                    path = "img/pro4.jpg";
+                    break;
+        }
+       $('#upName').append("<h2>"+name+"</h2>");
+       $('#upEmail').append("<p>Email: "+email+"</p>");
+       $('#upPhone').append("<p>Phone No:"+pnumber+"</p>");
+        $('#upProfile').append("<img src="+path+" class='img-responsive' style='width:100%'/>")
+    });
     
   /*  $('#g-sign').click(function(){
         $('#signUp').hide();

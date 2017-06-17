@@ -111,27 +111,27 @@
         </div>
         <center>
             <div id="mapScreen">
-                <h1 class="text-center"></h1>
                 <div class="row">
-                   <div class="col-md-3">
+                   <div class="col-md-3 col-sm-4">
                         <div id="profile">
                             <img src="img/avatar.jpg" class="img-responsive" style="width:100%"/> 
-                             <div id="Username"><h4 class="text-muted">John Doe</h4></div>
+                             <div id="Username"><h3 class="text-muted">John Doe</h3></div>
                        <div id="Email" class="text-muted"><p>default@email.com</p></div>
                             <div id="Phone" class="text-muted">9876543210</div>
                             <div id="who" class="text-muted"><p>Position: Teacher</p></div>
                         </div>
                        <div class="teacherClass">
                            <h4 class="text-muted">Select your Teacher</h4>
-                       <select>
-                            <option>Ram</option>   
-                            <option>Rahul</option>   
-                            <option>Michael</option>   
-                            <option>Rohit</option>   
+                       <select id="mySelect" name="selector"> 
+                            <option value="1">Ram</option>   
+                            <option value="2">Rahul</option>   
+                            <option value="3">Michael</option>   
+                            <option value="4">Rohit</option>   
                         </select>
+                           <button type="button" id="choose">Proceed</button>
                        </div>
                     </div> 
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-sm-8">
                         <div id="map"></div>
                     </div>
                 
@@ -139,6 +139,26 @@
             
             </div>
         </center>
+
+            <div id="userProfile" class="container-fluid">
+               <div class="row">
+                   <div class="col-md-4 col-sm-4">
+                        <div id="profile2" class="text-center">
+                            <div id="upProfile"></div>
+                             <div id="upName"></div>
+                            <div id="upEmail" class="text-muted"></div>
+                            <div id="upPhone" class="text-muted"></div>
+                            <div id="upWho" style="padding-bottom:10px" class="text-muted"><p>Position: Teacher</p></div>
+                       </div>
+            </div>
+                   <div class="col-md-8 col-sm-8">
+                       <h2 class="text-primary text-center">About</h2><hr>
+                    <div id="Bio" class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                       <h2 class="text-primary text-center">Please Fill in the Details</h2>
+                       <input type="text" id="calc" class="form-control" placeholder="Enter the number of classes">
+                       </div>
+                </div>
+            </div>
     </header>  
     <script>
       function initMap() {
@@ -181,6 +201,7 @@
       })(marker, i));
     }
       }
+   
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh-fLzIpXO7XxWC4EZ_5MyyqCQtn7eYPo&callback=initMap">
