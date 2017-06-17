@@ -160,6 +160,12 @@ label
 {
     margin-top: 10px;
 }
+#upName {
+	background: rgba(23, 35, 59, 0.9);
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
 form
 {margin: 0;}
 
@@ -167,7 +173,19 @@ form
 {
   margin-top:  10px;
 }
-
+#Contact {
+	background: rgba(23, 35, 59, 0.9);
+    color: white;
+}
+.icons{
+    padding-top: 15px;
+    color: white;
+    padding-bottom:  15px;
+}
+.icons a
+{
+    color: white;
+}
 @media only screen and (max-width:512px)
 {
     #landing h1 {

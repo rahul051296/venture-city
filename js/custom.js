@@ -39,7 +39,7 @@ $(document).ready(function(){
         $("div#Phone").replaceWith("<p class='text-muted'>Phone No:"+phoneBox.val()+"</p>");
                 if(learnBox.val().length>0)
                     {
-        $("div#who").replaceWith("<p class='text-muted'>Position: Learner</p>");
+                    $("div#who").replaceWith("<p class='text-muted'>Position: Learner</p>");   
                     }
         $('#mapScreen').css("visibility","visible");
         $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
@@ -51,7 +51,7 @@ $(document).ready(function(){
     
     $('#choose').click(function()
                       {
-        var name,email,place,pnumber,path;
+        var name,email,place,positon,pnumber,path;
         $('#mapScreen').hide();
         $('#userProfile').show();
         var variable = $('select[name=selector]').val();
@@ -61,31 +61,66 @@ $(document).ready(function(){
                     email = "ram@gmail.com";
                     place = "Egmore";
                     pnumber = "9876543210";
+                    position="Teacher";
                     path = "img/pro1.jpg"
                     break;
             case '2': name = "Rahul";
                     email = "rahul@gmail.com";
                     place = "Korattur";
+                    position="Teacher";
                     pnumber = "9876543211";
                     path = "img/pro2.jpg"
                     break;
             case '3': name = "Michael";
                     email = "michael@gmail.com";
                     place = "Ramapuram";
+                    position="Teacher";
                     pnumber = "9876543212";
                     path = "img/pro3.jpg";
                     break;
             case '4': name = "Rohit";
                     email = "rohit@gmail.com";
                     place = "Vilivakkam";
+                    position="Teacher";
                     pnumber = "9876543213";
                     path = "img/pro4.jpg";
                     break;
+            case '5': name = "Hitesh";
+                    email = "hitesh@gmail.com";
+                    place = "Avadi";
+                    position = "Learner";
+                    pnumber = "9876543214";
+                    path = "img/pro5.jpg";
+                    break;
+            case '6': name = "Priya";
+                    email = "priya@gmail.com";
+                    place = "Ennore";
+                    position = "Learner";
+                    pnumber = "9876543215";
+                    path = "img/pro6.jpg";
+                    break;
+            case '7': name = "Anand";
+                    email = "anand@gmail.com";
+                    place = "Kolathur";
+                    position = "Learner";
+                    pnumber = "9876543216";
+                    path = "img/pro7.jpg";
+                    break;
+            case '8': name = "Sowmya";
+                    email = "sowmya@gmail.com";
+                    place = "Ennore";
+                    position = "Learner";
+                    pnumber = "9876543217";
+                    path = "img/pro8.jpg";
+                    break;
         }
-       $('#upName').append("<h2>"+name+"</h2>");
-       $('#upEmail').append("<p>Email: "+email+"</p>");
-       $('#upPhone').append("<p>Phone No:"+pnumber+"</p>");
-        $('#upProfile').append("<img src="+path+" class='img-responsive' style='width:100%'/>")
+       $('#upName').append("<h2 class='text-center'>"+name+"</h2>");
+        $('#Contact').append("<center><div class='row'><div class='col-md-12 icons'><a href='whatsapp://send?text=Hey!' data-action='share/whatsapp/share'><i class='fa fa-whatsapp fa-2x' aria-hidden='true'></i></a></div></center>")
+      $('#upEmail').append("<h5>Email: " +email+"</h5>");
+       $('#upPhone').append("<h5>Phone No:" +pnumber+"</h5>");
+       $('#upWho').append("<h5>Position: " +position+"</h5>");
+        $('#upProfile').append("<img src="+path+" class='img-responsive' style='width:100%'/>");
+        
     });
     
   /*  $('#g-sign').click(function(){
