@@ -10,19 +10,20 @@ window.onload = function() {
 };
 
 $(document).ready(function(){
-    $('#login').hide();
     $('#signout').hide();
     $('body').css("overflow","hidden");
-    $('.navbar-brand').hide();
+    $('.navbar-default').css("background","rgba(23, 35, 59, 0.4)");
+        $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
+        $('.navbar-default').css("margin-bottom","0");
     var nameBox= $('#nameBox');
     var emailBox= $('#emailBox');
     var phoneBox= $('#phoneBox');
+    var teachBox= $('#teachBox');
+    var learnBox= $('#learnBox');
     $("#btn1").click(function(){
         $("#landing").hide();
         $("#signUp").show();
-        $('.navbar-default').css("background","rgba(23, 35, 59, 0.4)");
-        $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
-        $('.navbar-default').css("margin-bottom","0");
+        
         $('#login').show();    
         $('.navbar-brand').show();        
     })
@@ -33,9 +34,13 @@ $(document).ready(function(){
         $('#signout').show();
         $('#login').hide();
         $('body').css("overflow","scroll");
-        $( "div#Username" ).replaceWith( "<h2>"+nameBox.val()+"</h2>" );
-        $( "div#Email" ).replaceWith( "<p>"+emailBox.val()+"</p>" );
-        $("div#Phone").append("<h5 style='font-weight:bold'>Phone No</h5><p>"+phoneBox.val()+"</p>")        
+        $( "div#Username" ).replaceWith( "<h2 class='text-uppercase'>"+nameBox.val()+"</h2>" );
+        $( "div#Email" ).replaceWith( "<p class='text-muted'>Email: "+emailBox.val()+"</p>" );
+        $("div#Phone").replaceWith("<p class='text-muted'>Phone No:"+phoneBox.val()+"</p>");
+                if(learnBox.val().length>0)
+                    {
+        $("div#who").replaceWith("<p class='text-muted'>Position: Learner</p>");
+                    }
         $('#mapScreen').css("visibility","visible");
         $('.navbar-default').css("background","rgba(23, 35, 59, 1)");
         $('body').css('background','#f4f4f4');
