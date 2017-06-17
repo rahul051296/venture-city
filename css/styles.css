@@ -27,6 +27,26 @@ body
   background-size: cover;
     
 }
+#whatsapp {
+	background: #1b4d3e;
+    color: white;
+    margin-top: 30px;
+    height: 50px;
+	margin-bottom: 30px;
+}
+#whatsapp a {
+	color: white;
+}
+#whatsapp a:hover {
+	text-decoration: none;
+}
+#meeting {
+	margin-top: 30px;
+	margin-bottom: 30px;
+    height: 50px;
+    background: #0077b5;
+    color: white;
+}
 #suggestions
 {
   display: block; 

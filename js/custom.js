@@ -118,7 +118,7 @@ $(document).ready(function(){
                     break;
         }
        $('#upName').append("<h2 class='text-center'>"+name+"</h2><p>("+place+")</p>");
-        $('#Contact').append("<center><div class='row'><div class='col-md-12 icons'><a href='whatsapp://send?text=Hey!' data-action='share/whatsapp/share'><i class='fa fa-whatsapp fa-2x' aria-hidden='true'></i></a></div></center>")
+        $('#Contact').append("<center><div class='row'><div class='col-md-12 icons'><a href='whatsapp://send?text=Hey! I stay at Adyar. Can we meetup?' data-action='share/whatsapp/share'><i class='fa fa-whatsapp fa-2x' aria-hidden='true'></i></a></div></center>")
       $('#upEmail').append("<h5>Email: " +email+"</h5>");
        $('#upPhone').append("<h5>Phone No:" +pnumber+"</h5>");
        $('#upWho').append("<h5>Position: " +position+"</h5>");
@@ -128,6 +128,10 @@ $(document).ready(function(){
     
    $('#g-sign').click(function(){
         alert("This functionality is not available right now. Sorry for the inconvinience :-/. Please try the normal Sign-up");
+    })
+    
+    $('#meeting').click(function(){
+        alert("An email has been sent to the sser with your details.")
     })
     
    var availableTags = [ "ActionScript", "AppleScript", "Asp"];
