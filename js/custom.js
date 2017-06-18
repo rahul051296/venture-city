@@ -131,7 +131,7 @@ $(document).ready(function(){
     })
     
     $('#meeting').click(function(){
-        alert("An email has been sent to the sser with your details.")
+        alert("A request email has been sent to the user with your details.")
     })
     
    var availableTags = [ "ActionScript", "AppleScript", "Asp"];
