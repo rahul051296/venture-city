@@ -13,7 +13,6 @@ window.onload = function() {
 
 $(document).ready(function(){
     $('#signout').hide();
-    $('body').css("overflow","hidden");
     $('.navbar-default').css("background","rgba(23, 35, 59, 0.4)");
         $('.navbar-default').css("box-shadow","-1px 1px 10px 0.2px rgba(0,0,0,0.35)");
         $('.navbar-default').css("margin-bottom","0");
@@ -129,6 +128,7 @@ $(document).ready(function(){
    $('#g-sign').click(function(){
         alert("This functionality is not available right now. Sorry for the inconvinience :-/. Please try the normal Sign-up");
     })
+
     
     $('#meeting').click(function(){
         alert("A request email has been sent to the user with your details.")
@@ -154,6 +154,7 @@ $(document).ready(function(){
             "Lisp",
             "Perl",
             "PHP",
+            "PureScript",
             "Python",
             "Ruby",
             "Scala",
