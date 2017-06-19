@@ -134,31 +134,9 @@ $(document).ready(function(){
         alert("A request email has been sent to the user with your details.")
     })
     
-   var availableTags = [ "ActionScript", "AppleScript", "Asp"];
    $(function() { 
-        var availableTags = [ "ActionScript",
-            "AppleScript",
-            "Asp",
-            "BASIC",
-            "C",
-            "C++",
-            "Clojure",
-            "COBOL",
-            "ColdFusion",
-            "Erlang",
-            "Fortran",
-            "Groovy",
-            "Haskell",
-            "Java",
-            "JavaScript",
-            "Lisp",
-            "Perl",
-            "PHP",
-            "PureScript",
-            "Python",
-            "Ruby",
-            "Scala",
-            "Scheme"];
+        var availableTags = [ "ActionScript","AppleScript","Asp","BASIC","C","C++","Clojure","COBOL","ColdFusion","Erlang","Fortran","Groovy","Haskell","Java","JavaScript","Lisp","Perl","PHP","PureScript","Python","Ruby","Scala","Scheme"];
+       
         $( "#teachBox" ).autocomplete({ source: availableTags, appendTo: "#suggestions1" });
         $( "#learnBox" ).autocomplete({ source: availableTags, appendTo: "#suggestions2" });
     });
